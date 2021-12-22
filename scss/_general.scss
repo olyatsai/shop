@@ -1,0 +1,59 @@
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Lato';
+    @include font(14px, 17px, 400, normal);
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+/* цвет для placeholder */
+
+::-webkit-input-placeholder {
+    color: $placeholder-grey;
+}
+
+::-moz-placeholder {
+    color: $placeholder-grey;
+}
+
+/* Firefox 19+ */
+:-moz-placeholder {
+    color: $placeholder-grey;
+}
+
+/* Firefox 18- */
+:-ms-input-placeholder {
+    color: $placeholder-grey;
+}
+
+/* скрываем placeholder при фокусе */
+:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+:focus::-moz-placeholder {
+    color: transparent;
+}
+
+:focus:-moz-placeholder {
+    color: transparent;
+}
+
+:focus:-ms-input-placeholder {
+    color: transparent;
+}

@@ -1,0 +1,127 @@
+.header {
+    background-color: $black;
+
+    .header__wrp {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 75px;
+    }
+
+    .header__logo {
+        margin: 0 41px 0 0;
+    }
+
+    .header__search-group {
+        display: flex;
+        align-items: center;
+    }
+
+    .header__search-wrp {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    .header__loupe {
+        margin-right: 10px;
+    }
+
+    .header__search-input {
+        padding: 10px 20px;
+        border: none;
+        outline: 1px solid $white-text;
+        border-radius: 30px;
+        background: $black;
+        color: $white-text;
+        padding-left: 25px;
+    }
+
+    .header__form {
+        position: absolute;
+        display: none;
+    }
+
+    .header__search-wrp:hover .header__form {
+        display: block;
+    }
+
+    .header__form::before {
+        position: absolute;
+        content: '';
+        width: 10px;
+        height: 10px;
+        top: 13px;
+        left: 7px;
+        background-image: url(../img/loupe.svg);
+        background-size: 10px 10px;
+        opacity: 0.7;
+    }
+
+    .header__button {
+        background-color: transparent;
+        border: 0;
+        fill: $white-text;
+    }
+
+    .header__button:hover,
+    .header__button:focus {
+        opacity: 0.5;
+        cursor: pointer;
+    }
+
+    .header__button:active {
+        fill: $pink-text;
+        opacity: 1;
+    }
+
+    .header__link {
+        margin: 0 0 0 33px;
+        fill: $white-text;
+    }
+
+    .header__link:hover,
+    .header__link:focus {
+        opacity: 0.5;
+    }
+
+    .header__link:active {
+        fill: $pink-text;
+        opacity: 1;
+    }
+
+    .header__link-basket {
+        position: relative;
+    }
+
+    .header__link-basket-count {
+        content: '';
+        color: $white-text;
+        position: absolute;
+        width: 19px;
+        height: 19px;
+        background-color: $pink-text;
+        border-radius: 50%;
+        top: -20px;
+        right: -10px;
+        text-align: center;
+    }
+
+    .header__menu {
+        background: $white-text;
+        display: block;
+        height: 765px;
+        width: 232px;
+        position: absolute;
+        right: 0;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    }
+
+    .header__menu-title {
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-left: 33px;
+        margin-top: 37px;
+    }
+
+}

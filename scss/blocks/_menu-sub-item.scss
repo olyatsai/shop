@@ -1,0 +1,25 @@
+.menu-sub-item__item-link {
+    text-decoration: none;
+    font-family: inherit;
+    color: #6F6E6E;
+    margin-left: 55px;
+    display: inline-block;
+    margin-top: 11px;
+}
+
+.menu-sub-item__item-link:hover,
+.menu-sub-item__item-link:focus {
+    text-decoration: underline;
+}
+
+.menu-sub-item__item-link:active {
+    text-decoration: underline;
+    color: $pink-text;
+}
+
+.menu-sub-item__title {
+    text-transform: uppercase;
+    color: $pink-text;
+    margin-left: 33px;
+    margin-top: 20px;
+}
