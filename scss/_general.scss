@@ -57,3 +57,19 @@ body {
 :focus:-ms-input-placeholder {
     color: transparent;
 }
+
+@media (max-width: $tablet-width) {
+    .container {
+        width: 94%;
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width: $mobile-width) {
+    .container {
+        width: 92%;
+        margin: 0 auto;
+    }
+
+}
