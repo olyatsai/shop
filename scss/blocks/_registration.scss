@@ -4,17 +4,38 @@
 
 .registration-title {
     @include top-pink-text;
+
+    @include mobile {
+        text-align: center;
+    }
 }
 
 .registration__list {
     margin-top: 64px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 96px;
+
+    @include tablet {
+        margin-top: 40px;
+    }
+
+    @include mobile {
+        flex-direction: column;
+    }
 }
 
 .registration__item {
-    margin-bottom: 96px;
     width: 360px;
+
+    @include tablet {
+        width: 47%;
+    }
+
+    @include mobile {
+        width: 95%;
+        margin-bottom: 40px;
+    }
 }
 
 .registration__form-input {
@@ -111,13 +132,20 @@ input[type="radio"]:checked {
 
 .registration__loyalty {
     width: 650px;
+
+    @include tablet {
+        width: 45%;
+        margin-left: 22px;
+    }
+
+    @include mobile {
+        width: 95%;
+    }
 }
 
 .registration__loyalty-title {
     text-transform: uppercase;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 29px;
+    @include font(24px, 29px, 300)
 }
 
 .registration__loyalty-text,
@@ -140,8 +168,9 @@ input[type="radio"]:checked {
 .registration__loyalty-item:before {
     content: '';
     display: block;
-    background-image: url(../img/registration\tick.svg);
+    background-image: url(../img/tick.svg);
     width: 20px;
     height: 16px;
-    margin-right: 23px;
+    padding-right: 23px;
+    background-repeat: no-repeat;
 }

@@ -6,16 +6,29 @@
         justify-content: space-between;
         align-items: center;
         min-height: 80px;
+
+        @include mobile {
+            flex-direction: column-reverse;
+        }
     }
 
     .copyright__text {
         font-size: 16px;
         line-height: 19px;
         color: $white-text;
+
+        @include mobile {
+            margin-bottom: 9px;
+        }
     }
 
     .copyright__list {
         display: flex;
+
+        @include mobile {
+            margin-top: 43px;
+            margin-bottom: 40px;
+        }
     }
 
     .copyright__item-link {
@@ -27,7 +40,7 @@
         margin-left: 7px;
     }
 
-    .icon {
+    .copyright__icon {
         fill: $black;
         background: $white-text;
     }
@@ -37,8 +50,8 @@
         background: $pink-text;
     }
 
-    .copyright__item-link:hover .icon,
-    .copyright__item-link:focus .icon {
+    .copyright__item-link:hover .copyright__icon,
+    .copyright__item-link:focus .copyright__icon {
         fill: $white-text;
         background: $pink-text;
     }
