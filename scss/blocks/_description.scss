@@ -1,0 +1,100 @@
+.description {
+    width: 1140px;
+    min-height: 600px;
+    padding: 65px 0;
+    border: 1px solid;
+    margin: -65px auto 128px auto;
+    z-index: 2;
+    background-color: $white-text;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .description__title {
+        color: $pink-text;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .description__devider {
+        background-color: $pink-text;
+        width: 63px;
+        height: 3px;
+        border: none;
+        margin-top: 12px;
+    }
+
+    .description__sub-title {
+        @include font(18px, 22px, 300);
+        color: #4D4D4D;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 12px;
+    }
+
+    .description__text {
+        font-weight: 300;
+        margin: 48px auto 32px auto;
+        text-align: center;
+        max-width: 555px;
+    }
+
+    .description__price {
+        color: $pink-text;
+        @include font(24px, 29px, 300);
+        text-align: center;
+    }
+
+    .description__line {
+        width: 640px;
+        margin: 65px auto;
+        border: 1px solid #EAEAEA;
+        height: 1px;
+        background: #EF5B70;
+        opacity: 0.2;
+    }
+
+    .description__dropdown {
+        margin: 0 auto;
+        padding: 30px 0;
+        display: flex;
+    }
+
+    .description__button {
+        display: block;
+        margin: 0 auto;
+        margin-top: 48px;
+        color: $pink-text;
+        background: none;
+        border: 1px solid $pink-text;
+        width: 211px;
+        height: 47px;
+        font-size: 16px;
+        line-height: 19px;
+        padding: 14px 0;
+        position: relative;
+    }
+
+    .description__button:hover,
+    .description__button:focus {
+        cursor: pointer;
+        border: 1px solid $black;
+    }
+
+    .description__button:active {
+        cursor: pointer;
+        background: $black;
+    }
+
+    .description__button::before {
+        position: absolute;
+        content: '';
+        background-image: url(../img/cart-pink.svg);
+        width: 26px;
+        height: 24px;
+        top: 12px;
+        left: 23px;
+    }
+
+
+}
