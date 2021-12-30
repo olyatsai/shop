@@ -1,0 +1,44 @@
+.fas-slider-arrow {
+    color: black;
+    font-size: 47px;
+    background-color: rgba(42, 42, 42, 0.15);
+}
+
+.fas-slider-arrow:hover,
+.fas-slider-arrow:focus {
+    cursor: pointer;
+}
+
+.fas-slider-arrow:active {
+    cursor: pointer;
+    color: $pink-text;
+}
+
+.fa-chevron-left:before {
+    padding: 10px 15px;
+}
+
+.fa-chevron-right:before {
+    padding: 10px 15px;
+}
+
+.dropdown {
+    width: 130px;
+}
+
+.btn-secondary {
+    color: #6F6E6E;
+    background-color: transparent;
+    border-color: #6F6E6E;
+}
+
+.btn {
+    line-height: 17px;
+    color: #6F6E6E;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid #6F6E6E;
+    font-size: 14px;
+    font-family: inherit;
+    text-transform: uppercase;
+}
