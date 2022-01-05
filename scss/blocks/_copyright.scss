@@ -48,6 +48,7 @@
     .copyright__item-link:hover,
     .copyright__item-link:focus {
         background: $pink-text;
+        transform: rotate(45deg);
     }
 
     .copyright__item-link:hover .copyright__icon,

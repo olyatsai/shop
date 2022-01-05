@@ -5,6 +5,14 @@
     .slider__img {
         width: 597px;
         margin: 0 auto;
+
+        @include breakpoint {
+            width: 60%;
+        }
+
+        @include mobile {
+            width: 100%;
+        }
     }
 
 }
