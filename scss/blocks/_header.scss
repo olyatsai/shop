@@ -70,6 +70,10 @@
         cursor: pointer;
     }
 
+    .header__button:hover {
+        transform: scale(1.2);
+    }
+
     .header__button:active {
         fill: $pink-text;
         opacity: 1;
@@ -83,6 +87,10 @@
     .header__link:hover,
     .header__link:focus {
         opacity: 0.5;
+    }
+
+    .header__link:hover {
+        transform: scale(1.4);
     }
 
     .header__link:active {

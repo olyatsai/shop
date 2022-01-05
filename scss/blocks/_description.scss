@@ -1,8 +1,7 @@
 .description {
-    width: 1140px;
+    width: 100%;
     min-height: 600px;
     padding: 65px 0;
-    border: 1px solid;
     margin: -65px auto 128px auto;
     z-index: 2;
     background-color: $white-text;
@@ -10,18 +9,26 @@
     flex-direction: column;
     align-items: center;
 
+    @include mobile {
+        margin-bottom: 64px;
+    }
+
     .description__title {
         color: $pink-text;
         text-transform: uppercase;
         text-align: center;
     }
 
-    .description__devider {
+    .description__title::after {
+        content: '';
+        display: block;
         background-color: $pink-text;
         width: 63px;
         height: 3px;
         border: none;
         margin-top: 12px;
+        color: $pink-text;
+        transform: translateX(65%);
     }
 
     .description__sub-title {
@@ -45,13 +52,19 @@
         text-align: center;
     }
 
-    .description__line {
+    .description__price::after {
+        content: '';
+        display: block;
         width: 640px;
         margin: 65px auto;
         border: 1px solid #EAEAEA;
         height: 1px;
         background: #EF5B70;
         opacity: 0.2;
+
+        @include mobile {
+            width: 175px;
+        }
     }
 
     .description__dropdown {

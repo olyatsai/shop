@@ -5,16 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная</title>
+    <title>Products</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../shop/css/all.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
         rel="stylesheet">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-</head> -->
-    <link rel="stylesheet" href="./css/bootstrap.css">
-    <link rel="stylesheet" href="./css/all.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+</head>
 <body>
 
     <header class="header">
@@ -102,6 +102,7 @@
 
 
         <section class="slider">
+            <h2 class="visually-hidden">Slider with product pics</h2>
 
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -116,11 +117,11 @@
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                   <i class="fas fa-angle-double-left fas-slider-arrow"></i>
+                    <i class="fas fa-chevron-left arrow-style"></i>
                   <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                    <i class="fas fa-angle-double-left fas-slider-arrow"></i>
+                    <i class="fas fa-chevron-right arrow-style"></i>
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
@@ -128,20 +129,18 @@
         </section>
 
 
-        <section class="description">
+        <section class="description container">
 
             <h3 class="description__title">women collection</h3>
-            <hr class="description__devider">
             <h4 class="description__sub-title">moschino cheap and chic</h4>
             <p class="description__text">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.</p>
             <p class="description__price">&dollar;561</p>
-            <hr class="description__line">
 
 
             <div class="description__dropdown">
 
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="dropdown dropdown-margin-right">
+                    <button class="btn btn-secondary dropdown-toggle button-style" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                         choose color
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -151,8 +150,8 @@
                     </ul>
                 </div>
 
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="dropdown dropdown-margin-right">
+                    <button class="btn btn-secondary dropdown-toggle button-style" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         choose size
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -163,7 +162,7 @@
                 </div>
 
                 <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button class="btn btn-secondary dropdown-toggle button-style" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         quantity
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -179,115 +178,84 @@
 
         </section>
 
+        <section class="clothes container">
+        <h2 class="clothes__title visually-hidden">Chosen clothes</h2>
 
-        <!-- <section class="product__products">
+        <ul class="clothes__list">
 
-            <ul class="products__list">
+            <li class="clothes__item clothes__item--left">
 
-                <li class="products__item">
+                <div class="clothes__item-card">
+                    <div class="clothes__item-card-wrapper">
 
-                    <div class="products__item-card">
-                        <div class="products__item-card-wrapper">
+                <img class="clothes__item-img" src="img/4.png" alt="products">
+                <div class="clothes__overlay"></div>
+                <button class="clothes__overlay-button" type="button"><span class="clothes__overlay-button--cart">Add to Cart</span></button>
 
-                    <img class="products__item-img" src="img/1.png" alt="products">
-                    <div class="products__overlay"></div>
-                    <button class="products__overlay-button" type="button"><span class="products__overlay-button--cart">Add to Cart</span></button>
-
-                        </div>
                     </div>
+                </div>
 
-                    <div class="products__item-wrp">
-                        <h3 class="products__item-title">ellery x m'o capsule</h3>
-                        <p class="products__item-text">Known for her sculptural takes on traditional tailoring,
-                            Australian
-                            arbiter of
-                            cool
-                            Kym Ellery teams up with Moda Operandi.</p>
-                        <p class="products__item-price">$52.00</p>
+                <div class="clothes__item-wrp">
+                    <h3 class="clothes__item-title">ellery x m'o capsule</h3>
+                    <p class="clothes__item-text">Known for her sculptural takes on traditional tailoring,
+                        Australian
+                        arbiter of
+                        cool
+                        Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="clothes__item-price">$52.00</p>
+                </div>
+            </li>
+
+            <li class="clothes__item clothes__item--hide clothes__item--margin">
+
+                <div class="clothes__item-card">
+                    <div class="clothes__item-card-wrapper">
+
+                <img class="clothes__item-img" src="img/3.png" alt="products">
+                <div class="clothes__overlay"></div>
+                <button class="clothes__overlay-button" type="button"><span class="clothes__overlay-button--cart">Add to Cart</span></button>
+
                     </div>
-                </li>
+                </div>
 
-                <li class="products__item">
+                <div class="clothes__item-wrp">
+                    <h3 class="clothes__item-title">ellery x m'o capsule</h3>
+                    <p class="clothes__item-text">Known for her sculptural takes on traditional tailoring,
+                        Australian
+                        arbiter of
+                        cool
+                        Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="clothes__item-price">$52.00</p>
+                </div>
+            </li>
 
-                    <div class="products__item-card">
-                        <div class="products__item-card-wrapper">
+            <li class="clothes__item clothes__item--hidden">
 
-                    <img class="products__item-img" src="img/2.png" alt="products">
-                    <div class="products__overlay"></div>
-                    <button class="products__overlay-button" type="button"><span class="products__overlay-button--cart">Add to Cart</span></button>
+                <div class="clothes__item-card">
+                    <div class="clothes__item-card-wrapper">
 
-                        </div>
+                <img class="clothes__item-img" src="img/6.png" alt="products">
+
+                <div class="clothes__overlay"></div>
+                <button class="clothes__overlay-button" type="button"><span class="clothes__overlay-button--cart">Add to Cart</span></button>
+
                     </div>
+                </div>
 
-                    <div class="products__item-wrp">
-                        <h3 class="products__item-title">ellery x m'o capsule</h3>
-                        <p class="products__item-text">Known for her sculptural takes on traditional tailoring,
-                            Australian
-                            arbiter of
-                            cool
-                            Kym Ellery teams up with Moda Operandi.</p>
-                        <p class="products__item-price">$52.00</p>
-                    </div>
-                </li>
+                <div class="clothes__item-wrp">
+                    <h3 class="clothes__item-title">ellery x m'o capsule</h3>
+                    <p class="clothes__item-text">Known for her sculptural takes on traditional tailoring,
+                        Australian
+                        arbiter of
+                        cool
+                        Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="clothes__item-price">$52.00</p>
+                </div>
+            </li>
 
-                <li class="products__item">
+        </ul>
 
-                    <div class="products__item-card">
-                        <div class="products__item-card-wrapper">
-
-                    <img class="products__item-img" src="img/3.png" alt="products">
-
-                    <div class="products__overlay"></div>
-                    <button class="products__overlay-button" type="button"><span class="products__overlay-button--cart">Add to Cart</span></button>
-
-                        </div>
-                    </div>
-
-                    <div class="products__item-wrp">
-                        <h3 class="products__item-title">ellery x m'o capsule</h3>
-                        <p class="products__item-text">Known for her sculptural takes on traditional tailoring,
-                            Australian
-                            arbiter of
-                            cool
-                            Kym Ellery teams up with Moda Operandi.</p>
-                        <p class="products__item-price">$52.00</p>
-                    </div>
-                </li>
-
-            </ul>
-
-        </section>
-
-
-
-        <section class="product__test container">
-
-<ul class="product__test-list"> 
-
-<li class="product__test-item">
-    <img class="product__test-img" src="./img/4.png" alt="">
-    <h4 class="product__test-title">ELLERY X M'O CAPSULE</h4>
-    <p class="product__test-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-    <p class="product__test-price">$52.00</p>
-</li>
-
-<li class="product__test-item">
-    <img class="product__test-img" src="./img/4.png" alt="">
-    <h4 class="product__test-title">ELLERY X M'O CAPSULE</h4>
-    <p class="product__test-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-    <p class="product__test-price">$52.00</p>
-</li>
-
-<li class="product__test-item">
-    <img class="product__test-img" src="./img/4.png" alt="">
-    <h4 class="product__test-title">ELLERY X M'O CAPSULE</h4>
-    <p class="product__test-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-    <p class="product__test-price">$52.00</p>
-</li>
-
-</ul>
-
-    </section> -->
+    </section>
 
 </main>
 
