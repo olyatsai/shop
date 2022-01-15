@@ -1,0 +1,41 @@
+.filter {
+    display: flex;
+    margin-top: 51px;
+
+    @include breakpoint {
+        justify-content: space-between;
+        margin-top: 24px;
+    }
+
+    .filter__dropdown {
+        display: flex;
+        margin: 0 auto;
+
+        @include breakpoint {
+            margin: 0;
+        }
+    }
+
+    .filter__button {
+        display: flex;
+        align-items: center;
+        margin-left: 16px;
+        border: none;
+        background: none;
+
+        @include breakpoint {
+            margin-left: 0;
+        }
+    }
+
+    .filter__button-text {
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-right: 11px;
+
+        @include mobile {
+            display: none;
+        }
+    }
+
+}
